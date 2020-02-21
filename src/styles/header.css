@@ -1,0 +1,131 @@
+.nav-fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 30;
+  transition: background-color 0.3s;
+  transition-timing-function: ease-out;
+}
+@media (max-width: 991px) {
+  .nav-light {
+    background: #ffffff !important;
+  }
+  .nav-dark {
+    background: #ffffff !important;
+  }
+  .nav-light .main-nav a {
+    color: #000;
+  }
+  .nav-dark .main-nav a {
+    color: #000;
+  }
+  .nav-light .nav-logo-dark {
+    display: none;
+  }
+  .nav-dark .nav-logo-light {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-light {
+    transition: background-color 0.3s;
+    transition-timing-function: ease-out;
+    background: transparent !important;
+  }
+  .nav-dark {
+    transition: background-color 0.3s;
+    transition-timing-function: ease-out;
+    background: #ffffff !important;
+  }
+  .nav-light .main-nav a {
+    color: #ffffff;
+  }
+  .nav-dark .main-nav a {
+    color: #000;
+  }
+  .nav-light .nav-logo-light {
+    display: none;
+  }
+  .nav-dark .nav-logo-light {
+    display: none;
+  }
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.main-header {
+  background: #ffffff;
+}
+.mh-logo {
+  margin: 0 0 -10px;
+  max-height: 30px;
+}
+.main-nav a {
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #343534;
+  text-decoration: none;
+}
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Flex & layout things:
+ * — Mobile first
+ * — Responsive
+ */
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 960px;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.main-header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-nav ul {
+  margin: 1em 0 0.5em;
+  text-align: center;
+}
+.main-nav li {
+  display: inline;
+}
+.main-nav a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+
+@media (min-width: 922px) {
+  .nav-light .main-nav a:hover,
+  .main-nav a:active {
+    color: #fcff18;
+  }
+  .nav-dark .main-nav a:hover,
+  .main-nav a:active {
+    background: #fcff18;
+  }
+}
+
+@media (min-width: 960px) {
+  .main-header .container {
+    justify-content: space-between;
+  }
+}

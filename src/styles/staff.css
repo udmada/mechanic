@@ -1,0 +1,33 @@
+.trainers-section {
+	padding: 121px 0 75px;
+}
+
+.trainers-section .section-title {
+	margin-bottom: 78px;
+}
+
+.trainer-item {
+	text-align: center;
+	padding: 0 5px;
+	margin-bottom: 30px;
+}
+
+.trainer-item .trainer-pic {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 0 auto 30px;
+	overflow: hidden;
+}
+
+.trainer-item .trainer-pic img {
+	max-width: 100%;
+}
+
+.trainer-item h4 {
+	margin-bottom: 20px;
+}
+
+.trainer-item p {
+	margin-bottom: 0;
+}

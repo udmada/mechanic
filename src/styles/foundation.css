@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+}
+::-moz-selection {
+  background: #f34a4e;
+  color: #fff;
+}
+::selection {
+  background: #f34a4e;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #353535;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  color: #505050;
+  line-height: 2;
+}
+
+img {
+  max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+/*---------------------
+Helper CSS
+ -----------------------*/
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.section-title h2 span {
+  background: #fcff18;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.section-title p {
+  padding-top: 25px;
+}
+
+.section-title.text-white span {
+  color: #353535;
+}
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.spad {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+  color: #fff;
+}
+
+/*---------------------
+Commom elements
+ -----------------------*/
+
+.elements-section {
+  padding: 121px 0 80px;
+}
+
+.element {
+  margin-bottom: 70px;
+}
+
+.element:last-child {
+  margin-bottom: 0;
+}
+
+.element .el-title {
+  margin-bottom: 75px;
+}
+
+/* buttons */
+
+.site-btn {
+  display: inline-block;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 228px;
+  padding: 20px 40px;
+  background: #fcff18;
+  color: #353535;
+  line-height: normal;
+  cursor: pointer;
+  text-align: center;
+}
+
+.site-btn:hover {
+  color: #353535;
+}
+
+.site-btn.sb-dark {
+  background: #242424;
+  color: #fcff18;
+}
+
+.site-btn.sb-dark:hover {
+  color: #fcff18;
+}
+
+.site-btn.sb-line {
+  background: transparent;
+  border: 2px solid #242424;
+  padding: 18px 40px;
+  color: #242424;
+}
+
+.site-btn.sb-line:hover {
+  color: #242424;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.section-title h2 span {
+  background: #fcff18;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.section-title p {
+  padding-top: 25px;
+}
+
+.section-title.text-white span {
+  color: #353535;
+}
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.spad {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.6;
+  z-index: 0;
+}
+.overlay-light {
+  position: relative;
+}
+
+.overlay-light::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+}
+.overlay-dark {
+  position: relative;
+}
+
+.overlay-dark::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.8;
+}
+
+.overlay-primary {
+  position: relative;
+}
+
+.overlay-primary::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #239fe5;
+  opacity: 0.6;
+}
+
+.overlay-white {
+  position: relative;
+}
+
+.overlay-white::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0.7;
+}
+
+.overlay-rounded::before {
+  border-radius: 5px;
+}
+
