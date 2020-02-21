@@ -10,7 +10,7 @@ import iconSuspension from "../images/services/icon-suspension.png"
 export default function Feature() {
   return (
     <>
-      <section className="feature-section">
+      <section className="feature-section" id="services">
         <div className="container">
           <div className="row justify-content-md-center">
             <div className="col-lg-8">

@@ -13,8 +13,6 @@ import Header from "./Header"
 import Footer from "./Footer"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/foundation.css"
-// import "./layout.css"
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -29,17 +27,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div
-        style={{
-          margin: `0 auto`,
-        }}
-      >
+      <div style={{margin: `0 auto`}}>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
       <Footer />
     </>

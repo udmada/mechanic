@@ -1,11 +1,15 @@
 import React from "react"
 import "../styles/ad.css"
+import adBgImg from "../images/add-bg.png"
 import checkIcon from "../images/check-icon.png"
 
 export default function Ad() {
+  const adStyle = {
+    background: `url(${adBgImg})`
+  }
   return (
     <>
-      <section className="add-section set-bg" data-setbg="img/add-bg.jpg">
+      <section className="add-section set-bg" style={adStyle}>
         <div className="container">
           <div className="row">
             <div className="col-lg-7 ml-auto">

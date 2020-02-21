@@ -1,6 +1,9 @@
 import React from "react"
 import "../styles/footer.css"
 import footerImg from "../images/footer-img.jpg"
+import addressIconYellow from "../images/icons/1.png"
+import phoneIconYellow from "../images/icons/2.png"
+import emailIconYellow from "../images/icons/3.png"
 
 export default function Footer() {
   const copyrightYear = new Date().getFullYear()
@@ -19,7 +22,7 @@ export default function Footer() {
               <div className="footer-widget">
                 <h4>Location</h4>
                 <div className="fw-info-box">
-                  <img src="img/icons/1.png" alt="" />
+                  <img src={addressIconYellow} alt="" />
                   <div className="fw-info-text">
                     <p>25 Example Lane, Somerfiled, Christchurch</p>
                   </div>
@@ -30,7 +33,7 @@ export default function Footer() {
               <div className="footer-widget">
                 <h4>Subscriptions</h4>
                 <div className="fw-info-box">
-                  <img src="img/icons/2.png" alt="" />
+                  <img src={phoneIconYellow} alt="" />
                   <div className="fw-info-text">
                     <p>021 042 7652</p>
                   </div>
@@ -41,7 +44,7 @@ export default function Footer() {
               <div className="footer-widget">
                 <h4>E-mail</h4>
                 <div className="fw-info-box">
-                  <img src="img/icons/3.png" alt="" />
+                  <img src={emailIconYellow} alt="" />
                   <div className="fw-info-text">
                     <p>contact@codos.co.nz</p>
                     <p>codos.co.nz</p>
@@ -82,16 +85,16 @@ export default function Footer() {
             <div className="col-md-6 order-1 order-md-2">
               <ul className="footer-menu">
                 <li>
-                  <a href="">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="">About Us</a>
+                  <a href="#aboutus">About Us</a>
                 </li>
                 <li>
-                  <a href="">Our Services</a>
+                  <a href="#services">Our Services</a>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
