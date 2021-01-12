@@ -2,7 +2,6 @@ import React from "react"
 import "../styles/footer.css"
 import footerImg from "../images/footer-img.jpg"
 import addressIconYellow from "../images/icons/1.png"
-import squirtImg from "../images/MK-10336.gif"
 import phoneIconYellow from "../images/icons/2.png"
 import emailIconYellow from "../images/icons/3.png"
 
@@ -57,9 +56,7 @@ export default function Footer() {
               <div className="footer-widget">
                 <h4>Social Media</h4>
                 <div className="fw-info-box">
-                  <a href="https://www.squirt.org">
-                    <img src={squirtImg} alt="squirt" />
-                  </a>
+                  <img src="img/icons/4.png" alt="" />
                   <div className="social-links">
                     <a href="#">
                       <i className="fa fa-pinterest"></i>
